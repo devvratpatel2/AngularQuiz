@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Site</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h5>Devvrat's Quiz Site</h5>
+        <div>
+            <label for="quizzes">Choose a Quiz:&nbsp;</label>
+            <select #select name="quizzes" id="quizzes" (change)="changeQuiz(select.value)">
+                <option value="">Choose one</option>
+                <option *ngFor="let quiz of allQuizzes; let i=index" [value]="i">{{quiz.name}}</option>
+            </select>
+        </div>
+    </nav>
+    
+    <router-outlet></router-outlet>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+{
+    "quizzes": [
+        {
+            "id": 0,
+            "name": "Physics",
+            "questions": [
+                {
+                    "question": "What is the unit of Force?",
+                    "options": [
+                        "K",
+                        "N",
+                        "kg",
+                        "C"
+                    ],
+                    "answer": 1
+                },
+                {
+                    "question": "How many laws did Newton make?",
+                    "options": [
+                        "4",
+                        "2",
+                        "3",
+                        "He did not"
+                    ],
+                    "answer": 2
+                },
+                {
+                    "question": "When is distance same as displacement?",
+                    "options": [
+                        "When you don't move",
+                        "When you make a circle",
+                        "Both 1 and 2",
+                        "None"
+                    ],
+                    "answer": 0
+                },
+                {
+                    "question": "What is momentum?",
+                    "options": [
+                        "Mass * Velocity",
+                        "Mass / Velocity",
+                        "Mass * Speed",
+                        "Mass / Speed"
+                    ],
+                    "answer": 0
+                },
+                {
+                    "question": "What is earth's gravitational force?",
+                    "options": [
+                        "3.14",
+                        "0",
+                        "9.81",
+                        "5"
+                    ],
+                    "answer": 2
+                }
+            ]
+        },
+
+        {
+            "id": 1,
+            "name": "Chemistry",
+            "questions": [
+                {
+                    "question": "What is the chemical equation of salt?",
+                    "options": [
+                        "HCl",
+                        "H2SO4",
+                        "NaCl",
+                        "CO2"
+                    ],
+                    "answer": 2
+                },
+                {
+                    "question": "What is the chemical equation of water?",
+                    "options": [
+                        "HCl",
+                        "H2SO4",
+                        "NaCl",
+                        "H2O"
+                    ],
+                    "answer": 3
+                },
+                {
+                    "question": "Who is credited with the invention of the modern periodic table?",
+                    "options": [
+                        "Mendeleev",
+                        "Mendel",
+                        "Newton",
+                        "Issac"
+                    ],
+                    "answer": 0
+                },
+                {
+                    "question": "What element is Ag?",
+                    "options": [
+                        "Gold",
+                        "Platinum",
+                        "Agamntium",
+                        "Silver"
+                    ],
+                    "answer": 3
+                },
+                {
+                    "question": "What is Avogadro's number?",
+                    "options": [
+                        "9.81",
+                        "6023",
+                        "3*10^8",
+                        "6.023*10^23"
+                    ],
+                    "answer": 3
+                }
+            ]
+        }
+        
+    ]
+}

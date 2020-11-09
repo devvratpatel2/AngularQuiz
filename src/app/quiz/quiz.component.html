@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Site</title>
+</head>
+<body>
+    <div *ngIf="start; else selectBlock">
+
+        <h1>{{allQuizzes[quizId].name}}</h1>
+        <div class="card p-5 m-3">
+            <div *ngIf="!finish; else finished">
+                <h4>{{currentQuestionId + 1}} of {{currentQuiz.questions.length}}</h4>
+                {{currentQuestion.question}}
+                <ol type="a">
+                    <li *ngFor="let answ of currentQuestion.options; let answerNumber=index">
+                        <input [(ngModel)]="choice" type="radio" id="currentQuestion" name="currentQuestion"
+                            value={{answerNumber}}>
+                        <label for="currentQuestion">&nbsp;{{answ}}</label><br>
+                    </li>
+                </ol>
+    
+                <div class="row m-1">
+                    <div class="col-12 col-md-3"><button class="btn btn-secondary m-2" (click)="getQuestion()">Next
+                            Question</button></div>
+                    <div class="col-12 col-md-3" (click)="submit()"><button class="btn btn-primary m-2">Submit</button></div>
+                </div>
+            </div>
+    
+    
+            <ng-template #finished>
+                <p>{{result}}</p>
+                <br/>
+                <p>Try a different quiz!</p>
+            </ng-template>
+        </div>
+    
+    </div>
+    
+    <ng-template #selectBlock>
+        <div class="card p-5 m-3" id="startQuizDisplay">
+            <p>Click below to start the quiz.</p><br />
+            <button class="btn btn-lg btn-primary col-12 col-md-3" (click)="getStarted();">Start</button>
+        </div>
+    </ng-template>
+    
+</body>
+</html>
